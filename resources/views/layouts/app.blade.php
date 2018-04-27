@@ -22,8 +22,24 @@
 </head>
 <body>
 	<div id="app">
-		
+		<nav class="nav has-shadow">
+			<div class="container">
+				<div class="nav-left">
+					<a class="nav-item" href="{{ route('home') }}">
+						<img src="{{asset('images/devmarketer-logo.png')}}" alt="Advanced Blog">
+					</a>
+					<div class="nav-item is-tab is-hidden-mobile">
+
+					</div>
+				</div>
+
+				<div class="nav-right">
+
+				</div>
+			</div>
+		</nav>
 		@yield('content')
+
 	</div>
 	<script src="{{ asset('js/app.js') }}"></script>
 </body>
